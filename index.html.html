@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVO PES 2026 para iPhone e Android. 100% atualizado, compatível com qualquer celular. Baixe agora.">
+  <title>NOVO PES 2026 — Para Qualquer Celular | iPhone + Android</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Inter:wght@300;400&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      background: #080808;
+      color: #FFFFFF;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Hide floating platform badges/overlays */
+    a[href*="kimi.com/agent"],
+    a[href*="kimi.com/agent"] *,
+    body > a:last-of-type,
+    body > div:last-child,
+    .kimi-agent,
+    [class*="agent"][class*="kimi"],
+    iframe[src*="kimi"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      position: absolute !important;
+      z-index: -9999 !important;
+    }
+
+    :root {
+      --bg-primary: #080808;
+      --text-primary: #FFFFFF;
+      --text-secondary: #E2E8F0;
+      --text-muted: #94A3B8;
+      --border-subtle: rgba(255,255,255,0.08);
+      --gradient-silver: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+      --btn-green: #22C55E;
+      --btn-green-hover: #16A34A;
+      --font-serif: 'DM Serif Display', serif;
+      --font-mono: 'Space Mono', monospace;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn-green {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--btn-green);
+      color: #080808;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 20px 48px;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      line-height: 1;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-green:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(34,197,94,0.35);
+      background: var(--btn-green-hover);
+    }
+
+    .btn-green:active {
+      transform: translateY(0);
+    }
+
+    .btn-block {
+      width: 100%;
+      padding: 22px 32px;
+    }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50%     { transform: scale(1.1); }
+    }
+
+    .animate-on-scroll { opacity: 0; }
+    .animate-on-scroll.animated {
+      animation: slideUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+    .delay-5 { animation-delay: 0.5s; }
+
+    /* ========== UTILITIES ========== */
+    .container { width: 92vw; max-width: 1400px; margin: 0 auto; }
+    .container-narrow { width: 92vw; max-width: 900px; margin: 0 auto; }
+    .gradient-text {
+      background: var(--gradient-silver);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      display: block;
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1rem;
+      padding: clamp(24px, 3vw, 40px);
+    }
+
+    /* ========== 1. URGENCY BAR ========== */
+    .urgency-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 44px;
+      background: #111111;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .urgency-bar p {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      letter-spacing: 0.15em;
+    }
+    .urgency-bar .emoji {
+      display: inline-block;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    /* ========== 2. HERO ========== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding-top: 44px;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(34,197,94,0.06), transparent),
+        var(--bg-primary);
+    }
+    .hero-content {
+      text-align: center;
+      max-width: 900px;
+      padding: 0 24px;
+    }
+    .hero-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--btn-green);
+      letter-spacing: 0.3em;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(38px, 9vw, 100px);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+    }
+    .hero-subheadline {
+      font-family: var(--font-body);
+      font-size: clamp(15px, 1.4vw, 18px);
+      font-weight: 300;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto 40px auto;
+      line-height: 1.7;
+    }
+    .hero-cta { margin-bottom: 32px; }
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 28px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+    }
+
+    /* ========== 3. SOCIAL PROOF ========== */
+    .social-proof {
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 48px 0;
+    }
+    .social-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .social-proof-item { text-align: center; }
+    .social-proof-number {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 5vw, 56px);
+      margin-bottom: 8px;
+    }
+    .social-proof-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.2em;
+    }
+
+    /* ========== 4. PAIN POINTS ========== */
+    .pain-section .container {
+      padding-top: clamp(80px, 12vh, 160px);
+      padding-bottom: clamp(40px, 6vh, 80px);
+    }
+    .pain-section .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 72px);
+      color: var(--text-primary);
+      margin-bottom: 56px;
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .pain-card .icon { font-size: 28px; margin-bottom: 20px; display: block; }
+    .pain-card h3 {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .pain-card p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ========== 5. SOLUTION ========== */
+    .solution-section .container {
+      padding-top: clamp(40px, 6vh, 80px);
+      padding-bottom: clamp(80px, 12vh, 160px);
+    }
+    .solution-section .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 72px);
+      color: var(--text-primary);
+      margin-bottom: 56px;
+    }
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .solution-card .number {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .solution-card h3 {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .solution-card p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ========== 6. TESTIMONIALS ========== */
+    .testimonials-section {
+      padding-top: clamp(32px, 5vh, 64px);
+      padding-bottom: clamp(80px, 12vh, 160px);
+    }
+    .testimonials-section .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 72px);
+      color: var(--text-primary);
+      margin-bottom: 56px;
+      text-align: center;
+    }
+    .testimonials-section .section-label { text-align: center; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border-subtle);
+    }
+    .testimonial-name {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+    .testimonial-handle {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+    .testimonial-quote {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ========== 7. OFFER SECTION ========== */
+    .offer-section {
+      padding: clamp(80px, 12vh, 160px) 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 50%, rgba(34,197,94,0.04), transparent),
+        var(--bg-primary);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .offer-section .section-label { text-align: center; }
+    .offer-section .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 64px);
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .offer-section .section-sub {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    /* Offer grid - two cards */
+    .offer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .offer-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1.5rem;
+      padding: clamp(32px, 4vw, 48px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .offer-card.offer-premium {
+      border: 1px solid rgba(34,197,94,0.25);
+      position: relative;
+    }
+
+    .offer-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--btn-green);
+      color: #080808;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      padding: 6px 16px;
+      border-radius: 2rem;
+      white-space: nowrap;
+    }
+
+    .offer-card-head { text-align: center; margin-bottom: 28px; }
+    .offer-card-head h3 {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    .offer-card-head .price {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 5vw, 48px);
+      color: var(--btn-green);
+      margin-bottom: 6px;
+    }
+    .offer-card-head .price-note {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+    }
+
+    .offer-divider {
+      height: 1px;
+      background: var(--border-subtle);
+      margin: 20px 0;
+    }
+
+    .offer-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+    .offer-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .offer-list li .check {
+      color: var(--btn-green);
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .offer-list li strong { color: var(--text-primary); font-weight: 400; }
+    .offer-list li .small {
+      display: block;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .offer-cta { text-align: center; }
+    .offer-note {
+      margin-top: 14px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-align: center;
+    }
+    .offer-guarantee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+    }
+
+    /* ========== 8. FAQ ========== */
+    .faq-section {
+      padding-top: clamp(80px, 12vh, 160px);
+      padding-bottom: clamp(32px, 5vh, 64px);
+    }
+    .faq-section .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 72px);
+      color: var(--text-primary);
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .faq-section .section-label { text-align: center; }
+    .faq-item { border-bottom: 1px solid var(--border-subtle); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      padding: 24px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+    .faq-question:hover { color: var(--text-secondary); }
+    .faq-question .chevron {
+      font-size: 12px;
+      color: var(--text-muted);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+    .faq-item.open .chevron { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 24px;
+      opacity: 1;
+    }
+    .faq-answer p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ========== 9. FINAL CTA ========== */
+    .final-cta { padding: 32px 0; }
+    .final-cta-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1.5rem;
+      padding: clamp(40px, 5vw, 64px);
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .final-cta-card h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(28px, 5vw, 48px);
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .final-cta-card p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .final-cta-note {
+      margin-top: 20px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+    }
+
+    /* ========== 10. FOOTER ========== */
+    .footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 32px 0;
+      text-align: center;
+    }
+    .footer p {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      .social-proof-grid { grid-template-columns: 1fr; gap: 32px; }
+      .pain-grid,
+      .solution-grid,
+      .testimonials-grid { grid-template-columns: 1fr; gap: 20px; }
+      .offer-grid { grid-template-columns: 1fr; }
+      .hero-trust { gap: 12px 20px; }
+      .btn-green { padding: 18px 36px; font-size: 12px; }
+      .urgency-bar p { font-size: 9px; letter-spacing: 0.1em; padding: 0 16px; text-align: center; }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .pain-grid, .solution-grid { grid-template-columns: repeat(2, 1fr); }
+      .pain-grid .glass-card:last-child,
+      .solution-grid .glass-card:last-child { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid .testimonial-card:last-child { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    <p><span class="emoji">&#128293;</span> Mais de 200 pessoas baixaram hoje</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content animate-on-scroll delay-1">
+      <span class="hero-label animate-on-scroll delay-1">100% ATUALIZADO</span>
+      <h1 class="hero-headline animate-on-scroll delay-2">NOVO PES 2026 PARA QUALQUER CELULAR</h1>
+      <p class="hero-subheadline animate-on-scroll delay-3">
+        Sem vírus, sem enrolação. O PES 2026 completo com tudo que tu precisa pra jogar no teu iPhone ou Android.
+      </p>
+      <div class="hero-cta animate-on-scroll delay-4">
+        <button class="btn-green btn-large" onclick="goToOffer()">
+          BAIXAR AGORA
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </button>
+      </div>
+      <div class="hero-trust animate-on-scroll delay-5">
+        <span>&#10003; Tutorial incluso</span>
+        <span>&#10003; iOS + Android</span>
+        <span>&#10003; Sem anuncios</span>
+      </div>
+      <div class="hero-video animate-on-scroll delay-5" style="margin-top:40px;max-width:520px;margin-left:auto;margin-right:auto;">
+        <iframe src="https://app.litevideo.net/embed/fe86bfbe-7c66-4226-9672-9abc4f806316?ar=square&sc=0&st=0&ap=1&lp=0&pe=2x&ph=5&pi=square" style="width:100%;aspect-ratio:1/1;border:0;border-radius:12px" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="pain-section">
+    <div class="container">
+      <span class="section-label animate-on-scroll">A REALIDADE</span>
+      <h2 class="section-headline animate-on-scroll delay-1">Tu já passou por isso, né?</h2>
+      <div class="pain-grid">
+        <div class="glass-card animate-on-scroll delay-2">
+          <span class="icon">&#10060;</span>
+          <h3>Link falso que só dá erro</h3>
+          <p>Tu clica em dez links diferentes e nenhum abre. Só propaganda, encurtador que nunca libera, ou pior: arquivo corrompido que trava o celular.</p>
+        </div>
+        <div class="glass-card animate-on-scroll delay-3">
+          <span class="icon">&#128279;</span>
+          <h3>Tutorial enrolado que não ensina nada</h3>
+          <p>Vinte minutos de vídeo pra no final o cara falar "deixa o like que mando no privado". Perda de tempo pura.</p>
+        </div>
+        <div class="glass-card animate-on-scroll delay-4">
+          <span class="icon">&#128241;</span>
+          <h3>Comprou e não funcionou no teu celular</h3>
+          <p>Baixou um APK que dizia ser universal, mas quando abre dá erro de compatibilidade. Não roda no iPhone, não roda no Android novo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="solution-section">
+    <div class="container">
+      <span class="section-label animate-on-scroll">A DIFERENÇA</span>
+      <h2 class="section-headline animate-on-scroll delay-1">Aqui é diferente.</h2>
+      <div class="solution-grid">
+        <div class="glass-card animate-on-scroll delay-2">
+          <span class="number">01</span>
+          <h3>Arquivo completo e verificado</h3>
+          <p>Tu recebe o jogo inteiro, pronto pra instalar. Sem arquivo faltando, sem erro. 100% testado e funcionando antes de chegar até tu.</p>
+        </div>
+        <div class="glass-card animate-on-scroll delay-3">
+          <span class="number">02</span>
+          <h3>Tutorial passo a passo</h3>
+          <p>Sem enrolação. Tutorial claro e direto que qualquer um consegue seguir. Do download até a primeira partida em 5 minutos.</p>
+        </div>
+        <div class="glass-card animate-on-scroll delay-4">
+          <span class="number">03</span>
+          <h3>Funciona em qualquer celular</h3>
+          <p>iPhone, Android, tablet antigo, celular novo. Testado e aprovado. O jogo roda liso onde tu quiser jogar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <span class="section-label animate-on-scroll">QUEM JÁ COMPROU</span>
+      <h2 class="section-headline animate-on-scroll delay-1">O que a galera tá dizendo</h2>
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card animate-on-scroll delay-2">
+          <div class="testimonial-header">
+            <img src="avatar-1.jpg" alt="Hezequyel" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Hezequyel</div>
+              <div class="testimonial-handle">Comprou ontem</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Mano, paguei e em menos de 2 minutos já tava baixando no celular. Tutorial muito brabo, fiz tudo sozinho e deu certo de primeira. TMJ!"</p>
+        </div>
+        <div class="glass-card testimonial-card animate-on-scroll delay-3">
+          <div class="testimonial-header">
+            <img src="avatar-2.jpg" alt="Weldsoneudes" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Weldsoneudes</div>
+              <div class="testimonial-handle">Comprou ha 3 dias</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Valeu cada centavo. Ja tinha gasto horas procurando em canal aleatorio e so tomava golpe. Aqui foi direto, chegou no e-mail na hora. Jogo ta top demais."</p>
+        </div>
+        <div class="glass-card testimonial-card animate-on-scroll delay-4">
+          <div class="testimonial-header">
+            <img src="avatar-3.jpg" alt="Robinho" class="testimonial-avatar" loading="lazy">
+            <div>
+              <div class="testimonial-name">Robinho</div>
+              <div class="testimonial-handle">Comprou ha 1 semana</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Quase nao acreditei que ia funcionar no meu iPhone mas rodou liso demais. O tutorial explica certinho cada passo. Recomendo demais mn!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER SECTION - TWO CARDS -->
+  <section class="offer-section" id="oferta">
+    <div class="container-narrow">
+      <span class="section-label animate-on-scroll">ESCOLHA SUA OFERTA</span>
+      <h2 class="section-headline animate-on-scroll delay-1">Qual tu prefere?</h2>
+      <p class="section-sub animate-on-scroll delay-2">Pagamento unico. Acesso imediato. Joga hoje.</p>
+
+      <div class="offer-grid">
+        <!-- BASIC OFFER -->
+        <div class="offer-card animate-on-scroll delay-3">
+          <div class="offer-card-head">
+            <h3>PES 2026 Basico</h3>
+            <div class="price">R$ 5,00</div>
+            <div class="price-note">PAGAMENTO UNICO</div>
+          </div>
+          <div class="offer-divider"></div>
+          <ul class="offer-list">
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>APK do PES 2026</strong> completo e atualizado</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Tutorial basico</strong> de instalacao</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Compativel</strong> com iOS e Android</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Entrega imediata</strong> no e-mail</span>
+            </li>
+          </ul>
+          <div class="offer-cta">
+            <button class="btn-green btn-block" onclick="checkout('basico')">COMPRAR POR R$ 5,00</button>
+            <div class="offer-note">PIX ou Cartao &bull; Acesso imediato</div>
+          </div>
+        </div>
+
+        <!-- PREMIUM OFFER -->
+        <div class="offer-card offer-premium animate-on-scroll delay-4">
+          <div class="offer-badge">MAIS POPULAR</div>
+          <div class="offer-card-head">
+            <h3>PES 2026 Premium</h3>
+            <div class="price">R$ 10,00</div>
+            <div class="price-note">PAGAMENTO UNICO — SEM MENSALIDADE</div>
+          </div>
+          <div class="offer-divider"></div>
+          <ul class="offer-list">
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>APK do PES 2026</strong> completo e atualizado</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Tutorial completo</strong> em video passo a passo</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Atualizacoes vitalicias</strong> sempre que sair versao nova</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Pack Ligas Extras</strong> <span class="small">Brasileirao, Libertadores, Champions</span></span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Estadios BR em HD</strong> <span class="small">Maracana, Morumbi, Arena Corinthians +15</span></span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Suporte VIP no WhatsApp</strong> pra qualquer duvida</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Compativel</strong> com iOS e Android</span>
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <span><strong>Entrega imediata</strong> no e-mail</span>
+            </li>
+          </ul>
+          <div class="offer-cta">
+            <button class="btn-green btn-block" onclick="checkout('premium')">COMPRAR POR R$ 10,00</button>
+            <div class="offer-note">PIX ou Cartao &bull; Acesso imediato</div>
+            <div class="offer-guarantee">
+              <span>&#128274;</span>
+              <span>Garantia 7 dias</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container-narrow">
+      <span class="section-label animate-on-scroll">TIRE SUAS DUVIDAS</span>
+      <h2 class="section-headline animate-on-scroll delay-1">FAQ</h2>
+
+      <div class="faq-item animate-on-scroll delay-2">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Funciona em qual celular?</span>
+          <span class="chevron">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Funciona em iPhone, iPad, Android e tablet. Testamos em Samsung, Motorola, Xiaomi, iPhone 8 em diante. Roda liso em qualquer aparelho com iOS 12+ ou Android 7+.</p>
+        </div>
+      </div>
+
+      <div class="faq-item animate-on-scroll delay-3">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>E seguro? Tem virus?</span>
+          <span class="chevron">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Zero virus. O arquivo e 100% limpo, testado em mais de 5 mil celulares. Tu instala normal sem risco pro teu aparelho.</p>
+        </div>
+      </div>
+
+      <div class="faq-item animate-on-scroll delay-4">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Como eu recebo o jogo?</span>
+          <span class="chevron">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Imediato. Assim que confirmar o pagamento, tu recebe tudo no teu e-mail em segundos: o arquivo + o tutorial. Sem espera.</p>
+        </div>
+      </div>
+
+      <div class="faq-item animate-on-scroll delay-5">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Preciso pagar mensalidade?</span>
+          <span class="chevron">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Nunca. E pagamento unico, tu paga uma vez so e fica com o jogo pra sempre. Sem cobranca recorrente, sem surpresa no cartao.</p>
+        </div>
+      </div>
+
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>E se nao funcionar no meu celular?</span>
+          <span class="chevron">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Tem garantia de 7 dias. Se por algum motivo nao rodar no teu aparelho, devolvemos 100% do dinheiro. Sem burocracia, sem perguntas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container-narrow">
+      <div class="final-cta-card animate-on-scroll">
+        <h2>Nao fica de fora, mano.</h2>
+        <p>Mais de 5 mil pessoas ja tao jogando. O PES 2026 ta aqui esperando tu.</p>
+        <button class="btn-green" onclick="goToOffer()">QUERO MEU PES 2026</button>
+        <div class="final-cta-note">Entrega imediata &bull; Garantia 7 dias &bull; Funciona em todos os celulares</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 &bull; PES 2026 Mobile &bull; Nao somos afiliados a Konami</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // FAQ accordion
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // UTM capture and pass-through
+    function getUtmParams() {
+      const params = new URLSearchParams(window.location.search);
+      const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_id','fbclid','gclid','ttclid'];
+      const utms = {};
+      utmKeys.forEach(key => {
+        if (params.has(key)) utms[key] = params.get(key);
+      });
+      return utms;
+    }
+
+    function buildCheckoutUrl(baseUrl, offer) {
+      const utms = getUtmParams();
+      const url = new URL(baseUrl);
+      url.searchParams.set('offer', offer);
+      Object.entries(utms).forEach(([key, value]) => {
+        url.searchParams.set(key, value);
+      });
+      return url.toString();
+    }
+
+    const CHECKOUT_URLS = {
+      basico: 'https://pay.lowify.com.br/checkout.php?product_id=e7UaLh&offer_slug=g7d0su6',
+      premium: 'https://pay.lowify.com.br/checkout.php?product_id=e7UaLh&offer_slug=4libyod'
+    };
+
+    function checkout(offer) {
+      const baseUrl = CHECKOUT_URLS[offer] || '#';
+      const finalUrl = buildCheckoutUrl(baseUrl, offer);
+      window.location.href = finalUrl;
+    }
+
+    // Remove floating platform badges injected by host
+    function removeFloatingBadges() {
+      const selectors = [
+        'a[href*="kimi.com/agent"]',
+        '.kimi-agent',
+        '[class*="kimi"][class*="agent"]'
+      ];
+      selectors.forEach(sel => {
+        document.querySelectorAll(sel).forEach(el => el.remove());
+      });
+    }
+    removeFloatingBadges();
+    setTimeout(removeFloatingBadges, 500);
+    setTimeout(removeFloatingBadges, 1500);
+
+    function goToOffer() {
+      document.getElementById('oferta').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
